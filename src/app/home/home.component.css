@@ -1,0 +1,11 @@
+.imogi{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.khoz{
+    margin-left: 500px;
+}
+#likeButton{
+    cursor: pointer;
+}

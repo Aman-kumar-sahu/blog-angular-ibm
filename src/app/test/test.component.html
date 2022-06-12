@@ -1,0 +1,56 @@
+<!-- <form action="" (ngSubmit)="dataService.submitHandle()">
+    <input type="text" placeholder="first name" name="name" [(ngModel)]="dataService.name">
+    <input type="email" placeholder="email" name="email" [(ngModel)]="dataService.email">
+    <input type="url" placeholder="image url" name="image" [(ngModel)]="dataService.image">
+    <button type="submit">Submit</button>
+</form> -->
+<!-- <button (click)="disp()">display</button> -->
+<div class="container mt-5">
+  <h1 class="text-center mb-3">Blog Form</h1>
+<form #login="ngForm" (ngSubmit)="submitHandle(login.value)" class="shadow p-5 mb-5 bg-white rounded">
+    <!-- 2 column grid layout with text inputs for the first and last names -->
+    <div class="form-outline mb-4">
+      <label class="form-label" for="form6Example3">Image url</label>
+      <input type="url" id="form6Example3" class="form-control" [(ngModel)]="image" name="image"/>
+    </div>
+    <!-- Text input -->
+    <div class="form-outline mb-4">
+      <label class="form-label" for="form6Example3">Title</label>
+      <input type="text" id="form6Example3" class="form-control" [(ngModel)]="title" name="title"/>
+    </div>
+  
+    <!-- Text input -->
+    <div class="form-outline mb-4">
+      <label class="form-label" for="form6Example4">Author</label>
+      <input type="text" id="form6Example4" class="form-control" [(ngModel)]="author" name="author"/>
+    </div>
+  
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+      <label class="form-label" for="form6Example5">Post Date</label>
+      <input type="date" id="form6Example5" class="form-control" name="postDate" [(ngModel)]="postDate"/>
+    </div>
+  
+    <!-- Number input -->
+    <div class="form-outline mb-4">
+      <label class="form-label" for="form6Example6">Post Catagory</label>
+      <input type="text" id="form6Example6" class="form-control" name="postCatagory" [(ngModel)]="postCatagory"/>
+    </div>
+  
+    <!-- Message input -->
+    <div class="form-outline mb-4">
+      <label class="form-label" for="form6Example7">Content</label>
+      <textarea class="form-control" id="form6Example7" rows="4" name="content" [(ngModel)]="content"></textarea>
+    </div>
+  
+    <!-- Checkbox -->
+    <!-- <div class="form-check d-flex justify-content-center mb-4">
+      <input class="form-check-input me-2" type="checkbox" value="" id="form6Example8" checked />
+      <label class="form-check-label" for="form6Example8"> Create an account? </label>
+    </div> -->
+  
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-primary btn-block mb-4">submit</button>
+  </form>
+</div>
+

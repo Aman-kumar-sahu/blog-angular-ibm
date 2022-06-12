@@ -1,0 +1,23 @@
+<div class="container">
+    <h1 class="text-center m-4">Forum</h1>
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Author</th>
+            <th scope="col">Post Data</th>
+            <th scope="col">Post Catagory</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let item of arr2, let i=index">
+            <tr>
+              <th scope="row">{{i+1}}</th>
+              <td>{{item.title}}</td>
+              <td>{{item.author}}</td>
+              <td>{{item.postDate}}</td>
+              <td>{{item.postCatagory}}</td>
+            </tr>
+          </tbody>
+        </table>
+</div>
